@@ -17,9 +17,13 @@ namespace ThreadSample_1
             ///
 
             Thread thread = new Thread(DoSomething);
+            Thread thread1 = new Thread(DoSomething);
+
             
             //thread başlar
             thread.Start();
+            thread1.Start();
+
 
 
             //thread parallel çalışır iken başka operasyona geçebilirsin burada
@@ -32,7 +36,11 @@ namespace ThreadSample_1
 
         private static void DoSomething()
         {
+            
             Console.WriteLine("Caling DoSomething() method...");
+            Thread.Sleep(3000);
+            Console.WriteLine("Method end");
+
         }
     }
 }
