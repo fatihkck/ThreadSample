@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ThreadSample_1
@@ -13,7 +14,18 @@ namespace ThreadSample_1
 
             ///program çlışınca single thread(main thread) oluşur.
             ///yeni bir thread başlatmak için thread class'ından yeni bir örnek almak gerekir. Bunuda Thread.Start metotu sağlar.
+            ///
+
+            Thread thread = new Thread(DoSomething);
             
+            //thread başlar
+            thread.Start();
+
+
+            //thread parallel çalışır iken başka operasyona geçebilirsin burada
+
+            Console.WriteLine("Done");
+            Console.ReadLine();
 
 
         }
