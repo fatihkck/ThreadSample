@@ -11,6 +11,7 @@ namespace ThreadSynchronizationRaceCondition
     {
 
         private static int sum;
+        private static object _lock = new object();
         static void Main(string[] args)
         {
 
@@ -18,7 +19,10 @@ namespace ThreadSynchronizationRaceCondition
             {
                 for (int i = 0; i < 10000000; i++)
                 {
-                   Interlocked.Increment(ref sum);
+                    lock (_lock)
+                    {
+                        sum++;
+                    }
                 }
             }
             );
@@ -28,7 +32,10 @@ namespace ThreadSynchronizationRaceCondition
             {
                 for (int i = 0; i < 10000000; i++)
                 {
-                    Interlocked.Increment(ref sum);
+                    lock (_lock)
+                    {
+                        sum++;
+                    }
                 }
             }
             );
@@ -43,6 +50,8 @@ namespace ThreadSynchronizationRaceCondition
 
 
             Console.WriteLine("sum :" + sum);
+
+            Console.WriteLine("done");
 
             Console.Read();
 

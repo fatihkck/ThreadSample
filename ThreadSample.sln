@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSynchronizationRaceCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSynchronization", "ThreadSynchronization\ThreadSynchronization.csproj", "{D5960162-6C6B-431D-908C-F33791A0D8BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSynchronizationWithLock", "ThreadSynchronizationWithLock\ThreadSynchronizationWithLock.csproj", "{08DAB02B-CBE1-41E4-9412-7A90DCB458E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadMonitor", "ThreadMonitor\ThreadMonitor.csproj", "{BDA2232A-1AC3-4918-913F-A1598C834E29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{D5960162-6C6B-431D-908C-F33791A0D8BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5960162-6C6B-431D-908C-F33791A0D8BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5960162-6C6B-431D-908C-F33791A0D8BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08DAB02B-CBE1-41E4-9412-7A90DCB458E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08DAB02B-CBE1-41E4-9412-7A90DCB458E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08DAB02B-CBE1-41E4-9412-7A90DCB458E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08DAB02B-CBE1-41E4-9412-7A90DCB458E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDA2232A-1AC3-4918-913F-A1598C834E29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDA2232A-1AC3-4918-913F-A1598C834E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDA2232A-1AC3-4918-913F-A1598C834E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDA2232A-1AC3-4918-913F-A1598C834E29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
