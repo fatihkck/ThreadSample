@@ -1,23 +1,33 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29509.3
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSample-1", "ThreadSample-1\ThreadSample-1.csproj", "{CD5E55C3-1C88-4B56-93C5-D18A51B8C8B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-ThreadSample", "ThreadSample-1\1-ThreadSample.csproj", "{CD5E55C3-1C88-4B56-93C5-D18A51B8C8B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSample-2", "ThreadSample-2\ThreadSample-2.csproj", "{E32EDFB1-A68F-4313-A30C-E0F209A39227}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-ThreadSample", "ThreadSample-2\2-ThreadSample.csproj", "{E32EDFB1-A68F-4313-A30C-E0F209A39227}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSample-3", "ThreadSample-3\ThreadSample-3.csproj", "{71AC188F-FCBC-4119-86BA-BACBF59BB449}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-ThreadSample", "ThreadSample-3\3-ThreadSample.csproj", "{71AC188F-FCBC-4119-86BA-BACBF59BB449}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadPoolQueueSample", "ThreadPoolQueueSample\ThreadPoolQueueSample.csproj", "{7B7036BB-39AA-4FD0-B5FD-0A5D18C609FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-ThreadPoolQueueSample", "ThreadPoolQueueSample\4-ThreadPoolQueueSample.csproj", "{7B7036BB-39AA-4FD0-B5FD-0A5D18C609FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSynchronizationRaceCondition", "ThreadSynchronizationRaceCondition\ThreadSynchronizationRaceCondition.csproj", "{5AB31B08-0634-430D-AECA-04DDE56DF5B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-ThreadSynchronizationRaceCondition", "ThreadSynchronizationRaceCondition\5-ThreadSynchronizationRaceCondition.csproj", "{5AB31B08-0634-430D-AECA-04DDE56DF5B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSynchronization", "ThreadSynchronization\ThreadSynchronization.csproj", "{D5960162-6C6B-431D-908C-F33791A0D8BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6-ThreadSynchronization", "ThreadSynchronization\6-ThreadSynchronization.csproj", "{D5960162-6C6B-431D-908C-F33791A0D8BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSynchronizationWithLock", "ThreadSynchronizationWithLock\ThreadSynchronizationWithLock.csproj", "{08DAB02B-CBE1-41E4-9412-7A90DCB458E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7-ThreadSynchronizationWithLock", "ThreadSynchronizationWithLock\7-ThreadSynchronizationWithLock.csproj", "{08DAB02B-CBE1-41E4-9412-7A90DCB458E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadMonitor", "ThreadMonitor\ThreadMonitor.csproj", "{BDA2232A-1AC3-4918-913F-A1598C834E29}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8-ThreadMonitor", "ThreadMonitor\8-ThreadMonitor.csproj", "{BDA2232A-1AC3-4918-913F-A1598C834E29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9-TaskSample", "TaskSample\9-TaskSample.csproj", "{EB129050-B6FD-438D-A75D-5638AA5A70DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-TaskWithReturn", "TaskWithReturn\10-TaskWithReturn.csproj", "{F62130AA-C830-4774-A5A5-8C91D7E26A00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-TaskWithReturnNonBlocking", "11-TaskWithReturnNonBlocking\11-TaskWithReturnNonBlocking.csproj", "{396B764E-19D6-4E9D-AD86-4C8D5FBF32D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-TaskScheduling", "11-TaskScheduling\12-TaskScheduling.csproj", "{936E89B3-DB72-4BD6-A38F-58E0754C2CDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13-NonResponsiveApp", "13-NonResponsiveApp\13-NonResponsiveApp.csproj", "{CA2C6552-0D4D-43B3-B6A1-CD4C2057CB5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +67,26 @@ Global
 		{BDA2232A-1AC3-4918-913F-A1598C834E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDA2232A-1AC3-4918-913F-A1598C834E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDA2232A-1AC3-4918-913F-A1598C834E29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB129050-B6FD-438D-A75D-5638AA5A70DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB129050-B6FD-438D-A75D-5638AA5A70DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB129050-B6FD-438D-A75D-5638AA5A70DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB129050-B6FD-438D-A75D-5638AA5A70DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F62130AA-C830-4774-A5A5-8C91D7E26A00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F62130AA-C830-4774-A5A5-8C91D7E26A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F62130AA-C830-4774-A5A5-8C91D7E26A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F62130AA-C830-4774-A5A5-8C91D7E26A00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{396B764E-19D6-4E9D-AD86-4C8D5FBF32D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{396B764E-19D6-4E9D-AD86-4C8D5FBF32D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{396B764E-19D6-4E9D-AD86-4C8D5FBF32D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{396B764E-19D6-4E9D-AD86-4C8D5FBF32D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{936E89B3-DB72-4BD6-A38F-58E0754C2CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{936E89B3-DB72-4BD6-A38F-58E0754C2CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{936E89B3-DB72-4BD6-A38F-58E0754C2CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{936E89B3-DB72-4BD6-A38F-58E0754C2CDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA2C6552-0D4D-43B3-B6A1-CD4C2057CB5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA2C6552-0D4D-43B3-B6A1-CD4C2057CB5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA2C6552-0D4D-43B3-B6A1-CD4C2057CB5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA2C6552-0D4D-43B3-B6A1-CD4C2057CB5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
