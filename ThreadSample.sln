@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17-AsyncAwaitSample", "17-A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18-AsyncAwaitSample1", "18-AsyncAwaitSample1\18-AsyncAwaitSample1.csproj", "{0168E5EA-E6C1-4F86-BAEB-9E8E5BA8DA28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19-ReturnDataWithThread", "19-ReturnDataWithThread\19-ReturnDataWithThread.csproj", "{33502033-F691-4A33-BF6D-A121C62AC255}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -265,6 +267,18 @@ Global
 		{0168E5EA-E6C1-4F86-BAEB-9E8E5BA8DA28}.Release|x64.Build.0 = Release|Any CPU
 		{0168E5EA-E6C1-4F86-BAEB-9E8E5BA8DA28}.Release|x86.ActiveCfg = Release|Any CPU
 		{0168E5EA-E6C1-4F86-BAEB-9E8E5BA8DA28}.Release|x86.Build.0 = Release|Any CPU
+		{33502033-F691-4A33-BF6D-A121C62AC255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33502033-F691-4A33-BF6D-A121C62AC255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33502033-F691-4A33-BF6D-A121C62AC255}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{33502033-F691-4A33-BF6D-A121C62AC255}.Debug|x64.Build.0 = Debug|Any CPU
+		{33502033-F691-4A33-BF6D-A121C62AC255}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{33502033-F691-4A33-BF6D-A121C62AC255}.Debug|x86.Build.0 = Debug|Any CPU
+		{33502033-F691-4A33-BF6D-A121C62AC255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33502033-F691-4A33-BF6D-A121C62AC255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33502033-F691-4A33-BF6D-A121C62AC255}.Release|x64.ActiveCfg = Release|Any CPU
+		{33502033-F691-4A33-BF6D-A121C62AC255}.Release|x64.Build.0 = Release|Any CPU
+		{33502033-F691-4A33-BF6D-A121C62AC255}.Release|x86.ActiveCfg = Release|Any CPU
+		{33502033-F691-4A33-BF6D-A121C62AC255}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
