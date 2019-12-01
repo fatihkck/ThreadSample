@@ -31,6 +31,7 @@
             this.executeSync = new System.Windows.Forms.Button();
             this.executeAsync = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ProcessFile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // executeSync
@@ -55,17 +56,28 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 184);
+            this.textBox1.Location = new System.Drawing.Point(83, 221);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(546, 182);
             this.textBox1.TabIndex = 2;
+            // 
+            // ProcessFile
+            // 
+            this.ProcessFile.Location = new System.Drawing.Point(83, 156);
+            this.ProcessFile.Name = "ProcessFile";
+            this.ProcessFile.Size = new System.Drawing.Size(546, 44);
+            this.ProcessFile.TabIndex = 3;
+            this.ProcessFile.Text = "Progess File";
+            this.ProcessFile.UseVisualStyleBackColor = true;
+            this.ProcessFile.Click += new System.EventHandler(this.ProcessFile_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(808, 443);
+            this.Controls.Add(this.ProcessFile);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.executeAsync);
             this.Controls.Add(this.executeSync);
@@ -81,6 +93,7 @@
         private System.Windows.Forms.Button executeSync;
         private System.Windows.Forms.Button executeAsync;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button ProcessFile;
     }
 }
 

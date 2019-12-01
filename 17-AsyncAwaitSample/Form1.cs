@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -126,6 +128,29 @@ namespace _17_AsyncAwaitSample
         private void ReportWebsiteInfo(WebsiteDataModel data)
         {
             textBox1.Text += $"{ data.WebsiteUrl } downloaded: { data.WebsiteData.Length } characters long.{ Environment.NewLine }";
+        }
+
+        private async void ProcessFile_Click(object sender, EventArgs e)
+        {
+            Task<int> task = new Task<int>(CountCharacters);
+            task.Start();
+
+            textBox1.Text = "Processing file. Please wait...";
+            int count = await task;
+            textBox1.Text = count.ToString() + " characters in file";
+        }
+
+        public int CountCharacters()
+        {
+            int count = 0;
+            using (StreamReader reader = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + "Data.txt"))
+            {
+                string content = reader.ReadToEnd();
+                count = content.Length;
+                Thread.Sleep(5000);
+            }
+
+            return count;
         }
     }
 }
