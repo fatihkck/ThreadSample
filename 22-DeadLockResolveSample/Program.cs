@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace _21_DeadLockSample
+namespace _22_DeadLockResolveSample
 {
     class Program
     {
@@ -31,10 +31,10 @@ namespace _21_DeadLockSample
             t1.Join();
             t2.Join();
 
-            
+
             Console.WriteLine("Main Complate");
             Console.Read();
-            
+
         }
     }
 
@@ -67,7 +67,7 @@ namespace _21_DeadLockSample
         }
 
     }
-
+ 
     public class AccountManager
     {
         Account _fromAccount;
@@ -81,12 +81,12 @@ namespace _21_DeadLockSample
             _amountToTransfer = amountToTransfer;
         }
 
-        //Lock is applicable to only one resource at a time
+        
         public void Transfer()
         {
             Console.WriteLine(Thread.CurrentThread.Name + " trying to acquire lock on " + _fromAccount.ID.ToString());
 
-            lock (_fromAccount)//resource 1
+            lock (_fromAccount)
             {
                 Console.WriteLine(Thread.CurrentThread.Name + " acquired lock on " + _fromAccount.ID.ToString());
                 Console.WriteLine(Thread.CurrentThread.Name + " suspended for 1 second");
@@ -95,7 +95,7 @@ namespace _21_DeadLockSample
 
                 Console.WriteLine(Thread.CurrentThread.Name + " back in action and trying to acquire lock on " + _toAccount.ID.ToString());
 
-                lock (_toAccount)//resource 2
+                lock (_toAccount)
                 {
                     Console.WriteLine("This code will not be executed");
                     _fromAccount.Withdraw(_amountToTransfer);

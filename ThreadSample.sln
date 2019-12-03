@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29519.87
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-ThreadSample", "ThreadSample-1\1-ThreadSample.csproj", "{CD5E55C3-1C88-4B56-93C5-D18A51B8C8B9}"
 EndProject
@@ -44,6 +44,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20-ProtectingSharedResources", "20-ProtectingSharedResources\20-ProtectingSharedResources.csproj", "{7BC38796-7A1F-4937-9F51-D596B8452F6D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21-DeadLockSample", "21-DeadLockSample\21-DeadLockSample.csproj", "{CE0E7B8B-2903-4AD3-83C3-46F89C85E4E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22-DeadLockResolveSample", "22-DeadLockResolveSample\22-DeadLockResolveSample.csproj", "{063EF1A6-597E-410D-8F89-8B9180DD5C47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -307,6 +309,18 @@ Global
 		{CE0E7B8B-2903-4AD3-83C3-46F89C85E4E8}.Release|x64.Build.0 = Release|Any CPU
 		{CE0E7B8B-2903-4AD3-83C3-46F89C85E4E8}.Release|x86.ActiveCfg = Release|Any CPU
 		{CE0E7B8B-2903-4AD3-83C3-46F89C85E4E8}.Release|x86.Build.0 = Release|Any CPU
+		{063EF1A6-597E-410D-8F89-8B9180DD5C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{063EF1A6-597E-410D-8F89-8B9180DD5C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{063EF1A6-597E-410D-8F89-8B9180DD5C47}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{063EF1A6-597E-410D-8F89-8B9180DD5C47}.Debug|x64.Build.0 = Debug|Any CPU
+		{063EF1A6-597E-410D-8F89-8B9180DD5C47}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{063EF1A6-597E-410D-8F89-8B9180DD5C47}.Debug|x86.Build.0 = Debug|Any CPU
+		{063EF1A6-597E-410D-8F89-8B9180DD5C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{063EF1A6-597E-410D-8F89-8B9180DD5C47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{063EF1A6-597E-410D-8F89-8B9180DD5C47}.Release|x64.ActiveCfg = Release|Any CPU
+		{063EF1A6-597E-410D-8F89-8B9180DD5C47}.Release|x64.Build.0 = Release|Any CPU
+		{063EF1A6-597E-410D-8F89-8B9180DD5C47}.Release|x86.ActiveCfg = Release|Any CPU
+		{063EF1A6-597E-410D-8F89-8B9180DD5C47}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
