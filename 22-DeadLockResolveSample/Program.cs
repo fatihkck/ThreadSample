@@ -12,7 +12,7 @@ namespace _22_DeadLockResolveSample
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Main Started ");
+            Console.WriteLine("Main Started");
 
             Account accountA = new Account(101, 5000);
             Account accountB = new Account(102, 3000);
