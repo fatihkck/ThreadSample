@@ -39,8 +39,8 @@ namespace _19_ReturnDataWithThread
     public class CalculateNumber
     {
 
-        int _target;
-        SumOfNumbersCallback _callBackMethod;
+        readonly int _target;
+        readonly SumOfNumbersCallback _callBackMethod;
 
         public CalculateNumber(int target,SumOfNumbersCallback callBackMethod)
         {
