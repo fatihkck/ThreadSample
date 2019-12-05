@@ -34,12 +34,17 @@ namespace _17_AsyncAwaitSample
 
         private async void executeAsync_Click(object sender, EventArgs e)
         {
+
+            var threadId1 = Thread.CurrentThread.ManagedThreadId;
+
             var watch = System.Diagnostics.Stopwatch.StartNew();
 
             //await RunDownloadParallelAsync();
 
-            ///slow but 
+            ///slow but each response 
             await RunDownloadAsync();
+
+            var threadId2 = Thread.CurrentThread.ManagedThreadId;
 
             watch.Stop();
             var elapsedMs = watch.ElapsedMilliseconds;
